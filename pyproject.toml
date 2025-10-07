@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "test-mcp-server"
+version = "0.1.0"
+description = "A test MCP server with sample tools"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "mcp>=1.0.0",
+    "aiohttp>=3.9.0",
+]
+
+[project.scripts]
+test-mcp-server = "test_mcp_server:main"
